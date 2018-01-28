@@ -1,0 +1,24 @@
+[submodule "inet"]
+	path = inet
+	url = https://github.com/spp1914-cocpn/inet.git
+	branch = cocpnsim
+[submodule "libncs_matlab"]
+	path = libncs_matlab
+	url = https://github.com/spp1914-cocpn/libncs_matlab.git
+	branch = master
+[submodule "libncs_omnet"]
+	path = libncs_omnet
+	url = https://github.com/spp1914-cocpn/libncs_omnet.git
+	branch = master
+[submodule "matlab"]
+	path = matlab
+	url = https://github.com/spp1914-cocpn/matlab.git
+	branch = master
+[submodule "matlab-scheduler"]
+	path = matlab-scheduler
+	url = https://github.com/spp1914-cocpn/matlab-scheduler.git
+	branch = master
+[submodule "ncs-testbench"]
+	path = ncs-testbench
+	url = https://github.com/spp1914-cocpn/ncs-testbench.git
+	branch = master
