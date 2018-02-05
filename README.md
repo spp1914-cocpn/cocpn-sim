@@ -3,8 +3,7 @@ This is the CoCPN-Sim simulation framework. It enables joint simulations of cont
 The different components are located in git submodules.
 Please consult the documentation on ``git-submodule`` in order to learn how to use them.
 
-CoCPN-Sim is developed by the members of the project ``CoCPN: Cooperative Cyber Physical Networking`` within the
-[DFG Priority Programme Cyber-Physical Networking (SPP 1914)](http://spp1914.de/home/).
+CoCPN-Sim is developed by the members of the project ``CoCPN: Cooperative Cyber Physical Networking`` from the [Institute of Telematics (TM)](http://telematics.tm.kit.edu/english/index.php) and the [Intelligent Sensor-Actuator-Systems Laboratory (ISAS)](http://isas.uka.de/) of the [Karlsruhe Institute of Technology (KIT)](https://www.kit.edu/english/index.php), Germany, within the [DFG Priority Programme ``Cyber-Physical Networking (SPP 1914)``](http://spp1914.de/home/).
 
 ## In a nutshell
 CoCPN-Sim provides a way to integrate NCS components modeled and simulated in MATLAB into networks modeled with INET.
