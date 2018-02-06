@@ -25,3 +25,22 @@ Messages which are received from the network are immediately fed back to the MAT
 * ``matlab`` contains all MATLAB code for the co-simulation
 * ``matlab-scheduler`` is not really a special scheduler but provides hooks to initialize and deinitialize the MATLAB environment
 * ``ncs-testbench`` this repository shows how to build a MATLAB-OMNeT++/INET co-simulation with the components mentioned beforehand
+
+## Externals
+CoCPN-Sim makes use of the following external libraries/functions which are included in matlab/external.
+* [Nonlinear Estimation Toolbox (GPLv3)](https://nonlinearestimation.bitbucket.io/), only the required subset is included
+* [DiscreteSample (BSD)](https://de.mathworks.com/matlabcentral/fileexchange/21912-sampling-from-a-discrete-distribution)
+
+## License
+CoCPN-Sim is licensed under the GPLv3 license.
+
+## Citation
+If you use CoCPN-Sim in your research, please cite its usage as follows.
+````
+@misc{cocpnSim,
+  Title   = {{CoCPN-Sim}},
+  Author  = {Markus Jung and Florian Rosenthal},
+  Year    = {2018},
+  Url     = {https://github.com/spp1914-cocpn/cocpn-sim}
+}
+````
