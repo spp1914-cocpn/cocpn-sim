@@ -11,6 +11,19 @@ The whole simulator is based on the OMNeT++ simulation framework and has been te
 It relies on the MATLAB Compiler SDK to create a shared library with ``mcc``, which is then linked into the simulation binary.
 The examples in ``ncs-testbench`` show how to setup and run a simulation with CoCPN-Sim.
 
+## Quickstart
+A working installation of OMNeT++ 5.0 and MATLAB (including the MATLAB Compiler SDK) is required.
+The script ``setenv.sh`` is provided in order to set up the necessary environment variables before launching the OMNeT++ IDE.
+It requires you to export the variables ``OPP_ROOT`` and ``MCR_ROOT``, pointing to the root directory of OMNeT++ and MATLAB.
+Then, you can source the script and launch the OMNeT++ IDE:  
+``. setenv.sh``  
+``omnetpp``
+
+The OMNeT++ IDE will ask you to set up a new working space.
+Proceed and import all subfolders mentioned below, except the folder ``matlab``.
+Build the whole workspace.
+You will then find a working example of a NCS simulation in ``ncs-testbench``.
+
 ## Architecture
 The key component of CoCPN-Sim is the OMNeT++ module ``NcsContext``.
 It represents a sensor, a controller and an actuator of an NCS modeled in MATLAB.
