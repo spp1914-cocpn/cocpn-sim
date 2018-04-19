@@ -39,6 +39,10 @@ Messages which are received from the network are immediately fed back to the MAT
 * ``matlab-scheduler`` is not really a special scheduler but provides hooks to initialize and deinitialize the MATLAB environment
 * ``ncs-testbench`` this repository shows how to build a MATLAB-OMNeT++/INET co-simulation with the components mentioned beforehand
 
+## Unit Tests
+* ``libncs_matlab``: Unit tests for ``libncs_matlab`` reside in the ``tests`` subfolder and can be run by calling the function ``executeTestsLibNcsMatlab``.
+* ``matlab``: Unit tests for ``matlab`` reside in the ``Tests`` subfolder and can be run by calling the function ``executeTestsMatlab``.
+
 ## Externals
 CoCPN-Sim makes use of the following external libraries/functions which are included in matlab/external.
 * [Nonlinear Estimation Toolbox (GPLv3)](https://nonlinearestimation.bitbucket.io/) by Jannik Steinbring, only the required subset is included
