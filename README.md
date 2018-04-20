@@ -6,7 +6,7 @@ Please consult the documentation on ``git-submodule`` in order to learn how to u
 CoCPN-Sim is developed by the members of the project ``CoCPN: Cooperative Cyber Physical Networking`` from the [Institute of Telematics (TM)](http://telematics.tm.kit.edu/english/index.php) and the [Intelligent Sensor-Actuator-Systems Laboratory (ISAS)](http://isas.uka.de/) of the [Karlsruhe Institute of Technology (KIT)](https://www.kit.edu/english/index.php), Germany, within the [DFG Priority Programme ``Cyber-Physical Networking (SPP 1914)``](http://spp1914.de/home/).
 
 ## In a nutshell
-CoCPN-Sim provides a way to integrate NCS components modeled and simulated in MATLAB into networks modeled with INET.
+CoCPN-Sim provides a way to integrate components of a networked control system (NCS), modeled and simulated in MATLAB, into networks modeled with INET.
 The whole simulator is based on the OMNeT++ simulation framework and has been tested with OMNeT++ 5.0.
 It relies on the MATLAB Compiler SDK to create a shared library with ``mcc``, which is then linked into the simulation binary.
 The examples in ``ncs-testbench`` show how to setup and run a simulation with CoCPN-Sim.
