@@ -7,12 +7,15 @@ CoCPN-Sim is developed by the members of the project ``CoCPN: Cooperative Cyber 
 
 ## In a nutshell
 CoCPN-Sim provides a way to integrate components of a networked control system (NCS), modeled and simulated in MATLAB, into networks modeled with INET.
-The whole simulator is based on the OMNeT++ simulation framework and has been tested with OMNeT++ 5.0.
+The whole simulator is based on the OMNeT++ simulation framework and has been tested with OMNeT++ 5.0 and MATLAB 2016 on Ubuntu 16.04.
 It relies on the MATLAB Compiler SDK to create a shared library with ``mcc``, which is then linked into the simulation binary.
 The examples in ``ncs-testbench`` show how to setup and run a simulation with CoCPN-Sim.
 
 ## Quickstart
-A working installation of OMNeT++ 5.0 and MATLAB (including the MATLAB Compiler SDK) is required.
+A working installation of OMNeT++ 5.0 and MATLAB 2016b (including the MATLAB Compiler SDK) is required.
+Since MATLAB provides its own set of libraries, which may conflict with system libraries (especially with glibc/libstdc++), it may be neccessary to find a MATLAB release which is suitable for your distribution, or to use a [hackaround](https://wiki.archlinux.org/index.php/matlab#MATLAB_crashes_when_displaying_graphics).
+MATLAB 2016b is known to work with Ubuntu 16.04 and OMNeT++ 5.0, but OMNeT++ must be compiled without QtEnv and OpenSceneGraph-Support.
+
 The script ``setenv.sh`` is provided in order to set up the necessary environment variables before launching the OMNeT++ IDE.
 It requires you to export the variables ``OPP_ROOT`` and ``MCR_ROOT``, pointing to the root directory of OMNeT++ and MATLAB.
 Then, you can source the script and launch the OMNeT++ IDE:  
