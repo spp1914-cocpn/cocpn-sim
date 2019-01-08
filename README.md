@@ -1,4 +1,4 @@
-# CoCPN-Sims
+# CoCPN-Sim
 This is the CoCPN-Sim simulation framework. It enables joint simulations of control systems and the networks they rely on.
 The different components are located in git submodules.
 Please consult the documentation on ``git-submodule`` in order to learn how to use them.
