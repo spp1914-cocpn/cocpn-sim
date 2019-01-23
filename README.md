@@ -50,7 +50,8 @@ Messages which are received from the network are immediately fed back to the MAT
 CoCPN-Sim makes use of the following external libraries/functions which are included in matlab/external.
 * [Nonlinear Estimation Toolbox (GPLv3)](https://nonlinearestimation.bitbucket.io/) by Jannik Steinbring, only the required subset is included
 * [YALMIP](https://yalmip.github.io/) by Johan Löfberg
-* [DiscreteSample (BSD)](https://de.mathworks.com/matlabcentral/fileexchange/21912-sampling-from-a-discrete-distribution) by Dahua Lin
+* [DiscreteSample (FreeBSD)](https://de.mathworks.com/matlabcentral/fileexchange/21912-sampling-from-a-discrete-distribution) by Dahua Lin
+* [mtimesx (FreeBSD)](https://de.mathworks.com/matlabcentral/fileexchange/25977-mtimesx-fast-matrix-multiply-with-multi-dimensional-support) by James Tursa
 
 ## License
 CoCPN-Sim is licensed under the GPLv3 license.
