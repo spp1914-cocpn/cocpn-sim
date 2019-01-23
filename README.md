@@ -34,6 +34,11 @@ The interaction with components modeled in MATLAB is driven by a set of API func
 Communication between the CPS components in MATLAB is modeled in messages which are fed to the OMNeT++ part of the simulation and thus subject to the network model.
 Messages which are received from the network are immediately fed back to the MATLAB domain.
 
+A brief description of the CoCPN-Sim data flow can also be found in
+* M. Jung, F. Rosenthal and M. Zitterbart, *Poster Abstract: CoCPN-Sim: An Integrated Simulation Environment for Cyber-Physical Systems,* 2018 IEEE/ACM Third International Conference on Internet-of-Things Design and Implementation (IoTDI), Orlando, FL, 2018, pp. 281-282
+
+which is available [here](https://doi.org/10.1109/IoTDI.2018.00040).
+
 ## Folders
 * ``inet`` contains the INET framework plus the Network Simulation Cradle (NSC). With NSC, the TCP/IP stack of the Linux kernel (well, slightly outdated) may be used within the simulation.
 * ``libncs_matlab`` contains the definition of the API provided to OMNeT++ by the MATLAB part of the simulation.
