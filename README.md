@@ -12,7 +12,15 @@ It relies on the MATLAB Compiler SDK to create a shared library with ``mcc``, wh
 The examples in ``ncs-testbench`` show how to setup and run a simulation with CoCPN-Sim.
 
 ## Quickstart
-A working installation of OMNeT++ 5.0 and MATLAB 2016b (including the MATLAB Compiler SDK) is required.
+A working installation of OMNeT++ 5.0 and MATLAB 2016b is required, in conjunction with the following MATLAB toolboxes:
+
+* Control System Toolbox
+* MATLAB Compiler
+* MATLAB Compiler SDK
+* Optimization Toolbox
+* Signal Processing Toolbox
+* Statistics and Machine Learning Toolbox
+
 Since MATLAB provides its own set of libraries, which may conflict with system libraries (especially with glibc/libstdc++), it may be neccessary to find a MATLAB release which is suitable for your distribution, or to use a [hackaround](https://wiki.archlinux.org/index.php/matlab#MATLAB_crashes_when_displaying_graphics).
 MATLAB 2016b is known to work with Ubuntu 16.04 and OMNeT++ 5.0, but OMNeT++ must be compiled without QtEnv and OpenSceneGraph-Support.
 
@@ -34,10 +42,10 @@ The interaction with components modeled in MATLAB is driven by a set of API func
 Communication between the CPS components in MATLAB is modeled in messages which are fed to the OMNeT++ part of the simulation and thus subject to the network model.
 Messages which are received from the network are immediately fed back to the MATLAB domain.
 
-A brief description of the CoCPN-Sim data flow can also be found in
-* M. Jung, F. Rosenthal and M. Zitterbart, *Poster Abstract: CoCPN-Sim: An Integrated Simulation Environment for Cyber-Physical Systems,* 2018 IEEE/ACM Third International Conference on Internet-of-Things Design and Implementation (IoTDI), Orlando, FL, 2018, pp. 281-282
+Descriptions of the CoCPN-Sim data flow can also be found in 
+* M. Jung, F. Rosenthal, and M. Zitterbart, [*Poster Abstract: CoCPN-Sim: An Integrated Simulation Environment for Cyber-Physical Systems,*](https://doi.org/10.1109/IoTDI.2018.00040) Proceedings of the 2018 IEEE/ACM Third International Conference on Internet-of-Things Design and Implementation (IoTDI), Orlando, FL, 2018, pp. 281-282
+* F. Rosenthal, M. Jung, M. Zitterbart, and Uwe D. Hanebeck, [*CoCPN – Towards Flexible and Adaptive Cyber-Physical Systems Through Cooperation,*](https://doi.org/10.1109/CCNC.2019.8651882) Proceedings of the 2019 16th IEEE Annual Consumer Communications & Networking Conference (CCNC),  Las Vegas, NV, 2019, pp. 1-6 
 
-which is available [here](https://doi.org/10.1109/IoTDI.2018.00040).
 
 ## Folders
 * ``inet`` contains the INET framework plus the Network Simulation Cradle (NSC). With NSC, the TCP/IP stack of the Linux kernel (well, slightly outdated) may be used within the simulation.
