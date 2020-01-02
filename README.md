@@ -65,6 +65,14 @@ CoCPN-Sim makes use of the following external libraries/functions which are incl
 * [YALMIP](https://yalmip.github.io/) by Johan Löfberg
 * [DiscreteSample (FreeBSD)](https://de.mathworks.com/matlabcentral/fileexchange/21912-sampling-from-a-discrete-distribution) by Dahua Lin
 * [mtimesx (FreeBSD)](https://de.mathworks.com/matlabcentral/fileexchange/25977-mtimesx-fast-matrix-multiply-with-multi-dimensional-support) by James Tursa
+* [Armadillo (Apache)](http://arma.sourceforge.net/) by Conrad Sanderson and Ryan Curtin
+
+<br>
+<br>
+
+For additional information regarding YALMIP and Armadillo, refer to the corresponding papers:
+* Johan Löfberg, [YALMIP: a toolbox for modeling and optimization in MATLAB](https://doi.org/10.1109/CACSD.2004.1393890), Proceedings of the 2004 IEEE International Conference on Robotics and Automation, New Orleans, LA, USA, 2004.
+* Conrad Sanderson and Ryan Curtin, [Armadillo: a template-based C++ library for linear algebra](http://arma.sourceforge.net/armadillo_joss_2016.pdf), Journal of Open Source Software, Vol. 1, pp. 26, 2016.
 
 ## License
 CoCPN-Sim is licensed under the GPLv3 license.
