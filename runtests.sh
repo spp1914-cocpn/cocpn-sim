@@ -4,7 +4,7 @@
 
 cd libncs_matlab
 make clean
-make
+make -j4
 cd ..
 matlab -nodisplay -nojvm -r "addpath(genpath('libncs_matlab/tests'));addpath(genpath('matlab/Tests')); addpath(genpath('matlab/Classes'));addpath(genpath('matlab/external'));addpath(genpath('matlab/functions')); addpath(genpath('matlab/out')); results=[executeTestsMatlab() executeTestsLibNcsMatlab()];exit(any([results.Failed]));"
 
