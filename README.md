@@ -12,7 +12,7 @@ It relies on the MATLAB Compiler SDK to create a shared library with ``mcc``, wh
 The examples in ``ncs-testbench`` show how to setup and run a simulation with CoCPN-Sim.
 
 ## Quickstart
-A working installation of OMNeT++ 5.0 and MATLAB 2016b is required, in conjunction with the following MATLAB toolboxes:
+A working installation of OMNeT++ 5.0 and MATLAB 2016b (or later) is required, in conjunction with the following MATLAB toolboxes:
 
 * Control System Toolbox
 * MATLAB Compiler
@@ -20,6 +20,7 @@ A working installation of OMNeT++ 5.0 and MATLAB 2016b is required, in conjuncti
 * Optimization Toolbox
 * Signal Processing Toolbox
 * Statistics and Machine Learning Toolbox
+* Robust Control Toolbox
 
 Since MATLAB provides its own set of libraries, which may conflict with system libraries (especially with glibc/libstdc++), it may be neccessary to find a MATLAB release which is suitable for your distribution, or to use a [hackaround](https://wiki.archlinux.org/index.php/matlab#MATLAB_crashes_when_displaying_graphics).
 MATLAB 2016b is known to work with Ubuntu 16.04 and OMNeT++ 5.0, but OMNeT++ must be compiled without QtEnv and OpenSceneGraph-Support.
@@ -68,13 +69,15 @@ CoCPN-Sim makes use of the following external libraries/functions which are incl
 * [DiscreteSample (FreeBSD)](https://de.mathworks.com/matlabcentral/fileexchange/21912-sampling-from-a-discrete-distribution) by Dahua Lin
 * [mtimesx (FreeBSD)](https://de.mathworks.com/matlabcentral/fileexchange/25977-mtimesx-fast-matrix-multiply-with-multi-dimensional-support) by James Tursa
 * [Armadillo (Apache)](http://arma.sourceforge.net/) by Conrad Sanderson and Ryan Curtin
+* [SDPT3 (GPLv2)](https://blog.nus.edu.sg/mattohkc/softwares/sdpt3/) by Kim-Chuan Toh, Michael J. Todd, and Reha H. Tutuncu, only the required subset is included
 
 <br>
 <br>
 
-For additional information regarding YALMIP and Armadillo, refer to the corresponding papers:
+For additional information regarding YALMIP, Armadillo, and SDPT3, please refer to the corresponding papers:
 * Johan Löfberg, [YALMIP: a toolbox for modeling and optimization in MATLAB](https://doi.org/10.1109/CACSD.2004.1393890), Proceedings of the 2004 IEEE International Symposium on Computer Aided Control Systems Design, Taipei, Taiwan, 2004.
 * Conrad Sanderson and Ryan Curtin, [Armadillo: a template-based C++ library for linear algebra](http://arma.sourceforge.net/armadillo_joss_2016.pdf), Journal of Open Source Software, Vol. 1, pp. 26, 2016.
+* Kim-Chuan Toh, Michael J. Todd, and Reha H. Tutuncu, [SDPT3 — A Matlab software package for semidefinite programming](https://doi.org/10.1080/10556789908805762), Optimization Methods and Software, 11 (1999), pp. 545–581.
 
 ## License
 CoCPN-Sim is licensed under the GPLv3 license.
