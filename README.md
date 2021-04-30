@@ -45,7 +45,7 @@ Messages which are received from the network are immediately fed back to the MAT
 
 Descriptions of the CoCPN-Sim data flow can also be found in 
 * M. Jung, F. Rosenthal, and M. Zitterbart, [*Poster Abstract: CoCPN-Sim: An Integrated Simulation Environment for Cyber-Physical Systems,*](https://doi.org/10.1109/IoTDI.2018.00040) Proceedings of the 2018 IEEE/ACM Third International Conference on Internet-of-Things Design and Implementation (IoTDI), Orlando, FL, USA, 2018.
-* F. Rosenthal, M. Jung, M. Zitterbart, and Uwe D. Hanebeck, [*CoCPN – Towards Flexible and Adaptive Cyber-Physical Systems Through Cooperation,*](https://doi.org/10.1109/CCNC.2019.8651882) Proceedings of the 2019 16th IEEE Annual Consumer Communications & Networking Conference (CCNC),  Las Vegas, NV, USA, 2019. 
+* F. Rosenthal, M. Jung, M. Zitterbart, and U. D. Hanebeck, [*CoCPN – Towards Flexible and Adaptive Cyber-Physical Systems Through Cooperation,*](https://doi.org/10.1109/CCNC.2019.8651882) Proceedings of the 2019 16th IEEE Annual Consumer Communications & Networking Conference (CCNC),  Las Vegas, NV, USA, 2019. 
 
 
 ## Folders
