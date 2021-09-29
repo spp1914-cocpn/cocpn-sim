@@ -11,7 +11,7 @@
 
 # OMNeT++
 if [ -z "$OPP_ROOT" ]; then
-	export OPP_ROOT="/opt/omnetpp-5.0"
+	export OPP_ROOT="/opt/omnetpp-5.6.2"
 fi
 
 export PATH="$OPP_ROOT/bin:$PATH"
@@ -37,4 +37,3 @@ if [ -d "$PWD/liboverride" ]; then
 fi
 
 export LD_PRELOAD=/usr/lib/x86_64-linux-gnu/libstdc++.so.6
-

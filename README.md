@@ -7,12 +7,12 @@ CoCPN-Sim is developed by the members of the project ``CoCPN: Cooperative Cyber 
 
 ## In a nutshell
 CoCPN-Sim provides a way to integrate components of a networked control system (NCS), modeled and simulated in MATLAB, into networks modeled with INET.
-The whole simulator is based on the OMNeT++ simulation framework and has been tested with OMNeT++ 5.0 and MATLAB 2016 on Ubuntu 16.04.
+The whole simulator is based on the OMNeT++ simulation framework and has been tested with OMNeT++ 5.6.2 and MATLAB 2019b on Ubuntu 18.04/20.04.
 It relies on the MATLAB Compiler SDK to create a shared library with ``mcc``, which is then linked into the simulation binary.
 The examples in ``ncs-testbench`` show how to setup and run a simulation with CoCPN-Sim.
 
 ## Quickstart
-A working installation of OMNeT++ 5.0 and MATLAB 2016b (or later) is required, in conjunction with the following MATLAB toolboxes:
+A working installation of OMNeT++ 5.6.2 and MATLAB 2019b (or later) is required, in conjunction with the following MATLAB toolboxes:
 
 * Control System Toolbox
 * MATLAB Compiler
@@ -23,18 +23,20 @@ A working installation of OMNeT++ 5.0 and MATLAB 2016b (or later) is required, i
 * Robust Control Toolbox
 
 Since MATLAB provides its own set of libraries, which may conflict with system libraries (especially with glibc/libstdc++), it may be neccessary to find a MATLAB release which is suitable for your distribution, or to use a [hackaround](https://wiki.archlinux.org/index.php/matlab#MATLAB_crashes_when_displaying_graphics).
-MATLAB 2016b is known to work with Ubuntu 16.04 and OMNeT++ 5.0, but OMNeT++ must be compiled without QtEnv and OpenSceneGraph-Support.
+MATLAB 2019b is known to work with Ubuntu 18.04/20.04 and OMNeT++ 5.6.2, but it may be required to compile OMNeT++ without OpenSceneGraph-Support.
+
+We maintain a [patched version](https://github.com/spp1914-cocpn/omnetpp) of OMNeT++ that prevents an annoying crash at the end of simulations when running in commandline (Cmdenv) mode.
 
 The script ``setenv.sh`` is provided in order to set up the necessary environment variables before launching the OMNeT++ IDE.
 It requires you to export the variables ``OPP_ROOT`` and ``MCR_ROOT``, pointing to the root directory of OMNeT++ and MATLAB.
-Then, you can source the script and launch the OMNeT++ IDE:  
-``. setenv.sh``  
+Then, you can source the script and launch the OMNeT++ IDE:
+``. setenv.sh``
 ``omnetpp``
 
 The OMNeT++ IDE will ask you to set up a new working space.
 Proceed and import all subfolders mentioned below, except the folder ``matlab``.
 Build the whole workspace.
-You will then find a working example of a NCS simulation in ``ncs-testbench``.
+You will then find a working example of a NCS simulation in ``ncs-testbench/simulations``.
 
 ## Architecture
 The key component of CoCPN-Sim is the OMNeT++ module ``NcsContext``.
@@ -45,11 +47,11 @@ Messages which are received from the network are immediately fed back to the MAT
 
 Descriptions of the CoCPN-Sim data flow can also be found in 
 * M. Jung, F. Rosenthal, and M. Zitterbart, [*Poster Abstract: CoCPN-Sim: An Integrated Simulation Environment for Cyber-Physical Systems,*](https://doi.org/10.1109/IoTDI.2018.00040) Proceedings of the 2018 IEEE/ACM Third International Conference on Internet-of-Things Design and Implementation (IoTDI), Orlando, FL, USA, 2018.
-* F. Rosenthal, M. Jung, M. Zitterbart, and U. D. Hanebeck, [*CoCPN – Towards Flexible and Adaptive Cyber-Physical Systems Through Cooperation,*](https://doi.org/10.1109/CCNC.2019.8651882) Proceedings of the 2019 16th IEEE Annual Consumer Communications & Networking Conference (CCNC),  Las Vegas, NV, USA, 2019. 
+* F. Rosenthal, M. Jung, M. Zitterbart, and U. D. Hanebeck, [*CoCPN – Towards Flexible and Adaptive Cyber-Physical Systems Through Cooperation,*](https://doi.org/10.1109/CCNC.2019.8651882) Proceedings of the 2019 16th IEEE Annual Consumer Communications & Networking Conference (CCNC),  Las Vegas, NV, USA, 2019.
 
 
 ## Folders
-* ``inet`` contains the INET framework plus the Network Simulation Cradle (NSC). With NSC, the TCP/IP stack of the Linux kernel (well, slightly outdated) may be used within the simulation.
+* ``inet`` contains the INET framework.
 * ``libncs_matlab`` contains the definition of the API provided to OMNeT++ by the MATLAB part of the simulation.
 * ``libncs_omnet`` contains a set of modules which either interface the MATLAB API or support modelling of CPNs.
 * ``matlab`` contains all MATLAB code for the co-simulation

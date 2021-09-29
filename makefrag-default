@@ -1,0 +1,19 @@
+#
+# persistent make flags support
+#
+MAKECONF = ../../makeconf
+
+ifneq (,$(wildcard $(MAKECONF)))
+$(info included makeconf)
+include $(MAKECONF)
+COPTS_FILE += $(MAKECONF) # make every object file depend on MAKECONF ... rather hacky approach but it works
+endif
+
+# disable ASAN by default
+WITH_ASAN ?= 0
+
+ifeq ($(WITH_ASAN),1)
+    CXXFLAGS += -fsanitize=address -fsanitize-recover=address -fno-omit-frame-pointer
+    LDFLAGS += -fsanitize=address -fsanitize-recover=address -fno-omit-frame-pointer
+endif
+
