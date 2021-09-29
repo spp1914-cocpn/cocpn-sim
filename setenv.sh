@@ -20,7 +20,9 @@ export HOSTNAME
 export HOST
 
 # INET Network Simulation Cradle
-export LD_LIBRARY_PATH="$PWD/inet/3rdparty/nsc-0.5.3/lib:$LD_LIBRARY_PATH"
+if [ -d "$PWD/inet/3rdparty/nsc-0.5.3/lib" ]; then
+	export LD_LIBRARY_PATH="$PWD/inet/3rdparty/nsc-0.5.3/lib:$LD_LIBRARY_PATH"
+fi
 
 # Matlab Compiler SDK
 if [ -z "$MCR_ROOT" ]; then
@@ -32,8 +34,10 @@ export XAPPLESDIR="$MCR_ROOT/X11/app-defaults"
 export NON_MATLAB_LD_LIBRARY_PATH="$LD_LIBRARY_PATH"
 export LD_LIBRARY_PATH="/usr/lib/x86_64-linux-gnu:$MCR_ROOT/runtime/glnxa64:$MCR_ROOT/bin/glnxa64:$MCR_ROOT/sys/os/glnxa64:$LD_LIBRARY_PATH"
 
+# work around library conflicts with MATLAB
 if [ -d "$PWD/liboverride" ]; then
 	export LD_LIBRARY_PATH="$PWD/liboverride:$LD_LIBRARY_PATH"
 fi
 
 export LD_PRELOAD=/usr/lib/x86_64-linux-gnu/libstdc++.so.6
+
