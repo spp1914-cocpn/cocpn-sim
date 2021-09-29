@@ -1,3 +1,11 @@
+# About this branch
+
+This branch contains the implementation and configuration used in the work:
+
+M. Jung und M. Zitterbart, [*Hop-By-Hop: Advancing Cooperative Congestion Control for Cyber-Physical Systems*](https://doi.org/10.1109/LCN52139.2021.9524887), 2021 46th IEEE Conference on Local Computer Networks (LCN).
+
+To reproduce the simulation results, please take a look at the folder ``ncs-testbench/simulations/lcn21-eval``
+
 # CoCPN-Sim
 This is the CoCPN-Sim simulation framework. It enables joint simulations of control systems and the networks they rely on.
 The different components are located in git submodules.
