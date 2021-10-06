@@ -98,3 +98,7 @@ If you use CoCPN-Sim in your research, please cite its usage as follows.
  Lead authors: Markus Jung and Florian Rosenthal
  
  Email: markus.jung(at)kit.edu, florian.rosenthal(at)kit.edu
+
+  #### Contributors
+  * Fabio Broghammer
+  * Joanna Müller
