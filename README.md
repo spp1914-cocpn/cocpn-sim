@@ -14,13 +14,17 @@ The examples in ``ncs-testbench`` show how to setup and run a simulation with Co
 ## Quickstart
 A working installation of OMNeT++ 5.6.2 and MATLAB 2019b (or later) is required, in conjunction with the following MATLAB toolboxes:
 
-* Control System Toolbox
 * MATLAB Compiler
 * MATLAB Compiler SDK
+* Control System Toolbox
+* Robust Control Toolbox
 * Optimization Toolbox
+* Global Optimization Toolbox
 * Signal Processing Toolbox
 * Statistics and Machine Learning Toolbox
-* Robust Control Toolbox
+* Communications Toolbox
+* Curve Fitting Toolbox
+* System Identification Toolbox
 
 Since MATLAB provides its own set of libraries, which may conflict with system libraries (especially with glibc/libstdc++), it may be neccessary to find a MATLAB release which is suitable for your distribution, or to use a [hackaround](https://wiki.archlinux.org/index.php/matlab#MATLAB_crashes_when_displaying_graphics).
 MATLAB 2019b is known to work with Ubuntu 18.04/20.04 and OMNeT++ 5.6.2, but it may be required to compile OMNeT++ without OpenSceneGraph-Support.
