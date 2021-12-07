@@ -31,6 +31,9 @@ MATLAB 2019b is known to work with Ubuntu 18.04/20.04 and OMNeT++ 5.6.2, but it 
 
 We maintain a [patched version](https://github.com/spp1914-cocpn/omnetpp) of OMNeT++ that prevents an annoying crash at the end of simulations when running in commandline (Cmdenv) mode.
 
+Furthermore, some of the Matlab MEX files require that the [Boost C++ libraries](https://www.boost.org/) are installed on your system.
+In particular, [odeint](https://www.boost.org/doc/libs/1_77_0/libs/numeric/odeint/doc/html/index.html) is necessary.
+
 The script ``setenv.sh`` is provided in order to set up the necessary environment variables before launching the OMNeT++ IDE.
 It requires you to export the variables ``OPP_ROOT`` and ``MCR_ROOT``, pointing to the root directory of OMNeT++ and MATLAB.
 Then, you can source the script and launch the OMNeT++ IDE:
@@ -106,3 +109,5 @@ If you use CoCPN-Sim in your research, please cite its usage as follows.
   #### Contributors
   * Fabio Broghammer
   * Joanna Müller
+
+Some parts of the Matlab code are based on original implementations provided by Jörg Fischer and Maxim Dolgov.
