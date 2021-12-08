@@ -66,10 +66,10 @@ Descriptions of the CoCPN-Sim data flow can also be found in
 * ``ncs-testbench`` this repository shows how to build a MATLAB-OMNeT++/INET co-simulation with the components mentioned beforehand
 
 ## Unit Tests
-* ``libncs_matlab``: Unit tests for ``libncs_matlab`` reside in the ``tests`` subfolder and can be run by calling the function ``executeTestsLibNcsMatlab``.
-* ``matlab``: Unit tests for ``matlab`` reside in the ``Tests`` subfolder and can be run by calling the function ``executeTestsMatlab``.
+* ``libncs_matlab``: Unit tests for ``libncs_matlab`` reside in the ``tests`` subfolder and can be run (from Matlab) by calling the function ``executeTestsLibNcsMatlab``.
+* ``matlab``: Unit tests for ``matlab`` reside in the ``Tests`` subfolder and can be run (from Matlab) by calling the function ``executeTestsMatlab``.
 
-Alternatively, you can *source* the script ``runtests.sh`` that compiles all mex files within ``matlab``and then conveniently runs all test cases from the shell.
+Alternatively, you can execute the script ``runtests.sh`` that compiles all mex files within ``matlab``and then conveniently runs all test cases from the shell.
 
 ## Externals
 CoCPN-Sim makes use of the following external libraries/functions which are included in matlab/external.
