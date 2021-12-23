@@ -76,6 +76,7 @@ CoCPN-Sim makes use of the following external libraries/functions which are incl
 * [Nonlinear Estimation Toolbox (GPLv3)](https://nonlinearestimation.bitbucket.io/) by Jannik Steinbring, only the required subset is included
 * [YALMIP](https://yalmip.github.io/) by Johan Löfberg
 * [DiscreteSample (FreeBSD)](https://de.mathworks.com/matlabcentral/fileexchange/21912-sampling-from-a-discrete-distribution) by Dahua Lin
+* [randfixedsum](https://www.mathworks.com/matlabcentral/fileexchange/9700-random-vectors-with-fixed-sum) by Roger Stafford
 * [mtimesx (FreeBSD)](https://de.mathworks.com/matlabcentral/fileexchange/25977-mtimesx-fast-matrix-multiply-with-multi-dimensional-support) by James Tursa
 * [Armadillo (Apache)](http://arma.sourceforge.net/) by Conrad Sanderson and Ryan Curtin
 * [SDPT3 (GPLv2)](https://blog.nus.edu.sg/mattohkc/softwares/sdpt3/) by Kim-Chuan Toh, Michael J. Todd, and Reha H. Tutuncu, only the required subset is included
