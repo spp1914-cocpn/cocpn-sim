@@ -1,3 +1,6 @@
+# to build an image from this Dockerfile, you can for instance execute:
+# docker build -t cocpn-sim .
+
 FROM omnetpp/omnetpp-base:u18.04 as base 
 MAINTAINER Rudolf Hornig <rudi@omnetpp.org>
 
